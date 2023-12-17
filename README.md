@@ -1,12 +1,12 @@
 Countdown Timer in Vanilla JS
 
-Must-Have Features
+Features
 
 * Time should be displayed in hours, minutes, and seconds
 * Provide start, pause, and continue buttons
 * Stop when time reaches 0:0:0
 
-Good to Have Features
+Ongoing Improvements(Work in Progress)
 
 * Provide with reset button
 * Validations of
