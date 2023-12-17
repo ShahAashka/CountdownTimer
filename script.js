@@ -1,7 +1,7 @@
 const startBtn = document.getElementById("start-btn");
-// const pauseBtn = document.getElementById("pause-btn");
-// const continueBtn = document.getElementById("continue-btn");
 const resetBtn = document.getElementById("reset-btn");
+// const continueBtn = document.getElementById("continue-btn");
+// const pauseBtn = document.getElementById("pause-btn");
 
 const hours = document.getElementById("hour");
 const minutes = document.getElementById("minute");
@@ -30,6 +30,7 @@ function changeCurrentState(currentState){
         startBtn.classList.add("start-button")
     }
 }
+
 function timer(h, m, s){
     //run setInterval
     //trnasform all into total seconds
