@@ -1,0 +1,33 @@
+.coundown-timer{
+    display: grid;
+    place-items: center;
+    place-self: center;
+}
+.coundown-timer-timer-section{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+.coundown-timer-timer-section{
+    text-align: center;
+}
+.coundown-timer-timer-buttons{
+    margin-top: 24px;
+}
+.timer-buttons{
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+}
+.start-button{
+    background-color: green;
+}
+.pause-button{
+    background-color: tomato;
+}
+.continue-button{
+    background-color: goldenrod;
+}
+.reset-button{
+    background-color: wheat;
+}

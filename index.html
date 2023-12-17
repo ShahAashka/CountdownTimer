@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="coundown-timer">
+        <h1 class="coundown-timer title">Countdown Timer</h1>
+        <div class="coundown-timer-timer-section">
+            <div class="timer-section hours-section">
+                <h2 class="hours-section-hours-text">Hours</h2>
+                <input type="number" maxlength="2" id="hour" placeholder="00"
+                oninput="this.value=this.value.slice(0,this.maxlenght)">
+        
+            </div>
+            <div class="timer-section minutes-section">
+                <h2 class="minutes-section-minutes-text">Minutes</h2>
+                <input type="number" maxlength="2" id="minute" placeholder="00"
+                oninput="this.value=this.value.slice(0,this.maxlenght)">
+            </div>
+            <div class="timer-section seconds-sections">
+                <h2 class="seconds-sections-seconds-text">Seconds</h2>
+                <input type="number" maxlength="2" id="second" placeholder="00"
+                oninput="this.value=this.value.slice(0,this.maxlenght)">
+            </div>
+        </div>
+        <div class="coundown-timer-timer-buttons">
+            <button class="timer-buttons start-button" id="start-btn">Start</button>
+            <!-- <button class="timer-buttons pause-button" id="pause-btn">Pause</button>
+            <button class="timer-buttons continue-button" id="continue-btn">Continue</button> -->
+            <button class="timer-buttons reset-button" id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
