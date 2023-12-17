@@ -16,3 +16,7 @@ Good to Have Features
     - Input can only be a number
 * Alert on timer completion
 * Accessibility
+
+How to run this file
+
+* Download the folder and open the index.html file in your browser
