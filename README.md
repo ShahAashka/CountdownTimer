@@ -11,7 +11,6 @@ Ongoing Improvements(Work in Progress)
 * Provide with reset button
 * Validations of
     - Negative Values
-    - Hours greater than 24
     - Minutes/Seconds greater than 60
     - Input can only be a number
 * Alert on timer completion
@@ -22,5 +21,9 @@ How to run this file
 * Download the folder and open the index.html file in your browser
 
 
-https://github.com/ShahAashka/CountdownTimer/assets/35736445/a27996b6-3a8c-49a4-9ee2-c85a9de6b2c8
+https://github.com/ShahAashka/CountdownTimer/assets/35736445/847f91a5-f69a-4596-a4fb-c840d44b4fab
+
+
+
+
 
