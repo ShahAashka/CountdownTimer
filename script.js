@@ -36,10 +36,12 @@ function timer(h, m, s){
     //trnasform all into total seconds
     let totalSeconds = (h * 3600) + (m * 60) + s;
     remainingTime = totalSeconds
-    let [hr, min, sec] = convertSecondstoHMS(remainingTime);
-    hours.value = hr;
-    minutes.value = min;
-    seconds.value = sec;
+    if(m > 60 || s > 60){
+        let [hr, min, sec] = convertSecondstoHMS(remainingTime);
+        hours.value = hr;
+        minutes.value = min;
+        seconds.value = sec;
+    }
         timerId = setInterval(() => {
         updateInUi(remainingTime);
         remainingTime -= 1;
