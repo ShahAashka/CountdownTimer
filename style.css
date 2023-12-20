@@ -14,6 +14,31 @@
 .coundown-timer-timer-buttons{
     margin-top: 24px;
 }
+.timer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    /* border: 1px solid black; */
+}
+.hours-inputbox{
+    border: 0px;
+    font-size: large;
+    width: 80px;
+    text-align: center;
+}
+.seconds-inputbox{
+    border: 0px;
+    font-size: large;
+    width: 80px;
+    text-align: center;
+}
+.minutes-inputbox{
+    border: 0px;
+    font-size: large;
+    width: 80px;
+    text-align: center;
+}
 .timer-buttons{
     width: 80px;
     height: 30px;

@@ -11,19 +11,19 @@
         <h1 class="coundown-timer title">Countdown Timer</h1>
         <div class="coundown-timer-timer-section">
             <div class="timer-section hours-section">
-                <h2 class="hours-section-hours-text">Hours</h2>
-                <input type="number" maxlength="2" id="hour" placeholder="00"
+                <label for="hour" class="hours-section hours-text">Hours</label>
+                <input class="hours-section hours-inputbox" type="number" maxlength="2" id="hour" placeholder="00"
                 oninput="this.value=this.value.slice(0,this.maxlenght)">
         
             </div>
             <div class="timer-section minutes-section">
-                <h2 class="minutes-section-minutes-text">Minutes</h2>
-                <input type="number" maxlength="2" id="minute" placeholder="00"
+                <label for="minute" class="minutes-section minutes-text">Minutes</label>
+                <input class="minutes-section minutes-inputbox" type="number" maxlength="2" id="minute" placeholder="00"
                 oninput="this.value=this.value.slice(0,this.maxlenght)">
             </div>
             <div class="timer-section seconds-sections">
-                <h2 class="seconds-sections-seconds-text">Seconds</h2>
-                <input type="number" maxlength="2" id="second" placeholder="00"
+                <label for="second" class="seconds-sections seconds-text">Seconds</label>
+                <input class="seconds-section seconds-inputbox" type="number" maxlength="2" id="second" placeholder="00"
                 oninput="this.value=this.value.slice(0,this.maxlenght)">
             </div>
         </div>

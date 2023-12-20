@@ -36,13 +36,17 @@ function timer(h, m, s){
     //trnasform all into total seconds
     let totalSeconds = (h * 3600) + (m * 60) + s;
     remainingTime = totalSeconds
+    let [hr, min, sec] = convertSecondstoHMS(remainingTime);
+    hours.value = hr;
+    minutes.value = min;
+    seconds.value = sec;
         timerId = setInterval(() => {
+        updateInUi(remainingTime);
         remainingTime -= 1;
         if(remainingTime == -1){
             clearInterval(timerId)
             return;
         }
-        updateInUi(remainingTime);
     }, 1000)
 }
 
@@ -55,6 +59,11 @@ function convertSecondstoHMS(seconds){
 
 function updateInUi(timeLeft){
     let [hrs, mins, secs] = convertSecondstoHMS(timeLeft)
+    if(timeLeft == 0){
+        clearTimer();
+        return;
+    }
+
     if(secs > 0 ){
         if(secs == 59){
             minutes.value = mins;
@@ -81,6 +90,14 @@ function updateInUi(timeLeft){
     }
 }
 
+function clearTimer(){
+    clearInterval(timerId)
+    changeCurrentState("Reset")
+    hours.value = "00";
+    minutes.value = "00";
+    seconds.value = "00";
+}
+
 //event listeners
 startBtn.addEventListener("click", function(){
     
@@ -104,13 +121,7 @@ startBtn.addEventListener("click", function(){
     }
 });
 
-resetBtn.addEventListener("click", function(){
-    clearInterval(timerId)
-    changeCurrentState("Reset")
-    hours.value = "00";
-    minutes.value = "00";
-    seconds.value = "00";
-})
+resetBtn.addEventListener("click", clearTimer)
 
 // pauseBtn.addEventListener("click", function(){
 //     clearInterval(timerId)
